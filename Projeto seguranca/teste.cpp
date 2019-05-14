@@ -15,7 +15,7 @@ void Menu()
     printf("\t*MENU*\n");
     printf("1-Troca de senha\n");
     printf("2-Sair");
-    printf("\n\nDigite sua opÁ„o: ");
+    printf("\n\nDigite sua op√ß√£o: ");
     scanf("%d",&opcao);
     system("cls");
     switch(opcao)
@@ -28,7 +28,7 @@ void Menu()
     	{
         	printf("Digite sua nova senha: ");
         	gets(senha3);
-			switch(senha3[1])
+			switch(senha3[0])
     {
     case'a':
     file=fopen("Senha.txt","w+");
@@ -310,7 +310,7 @@ switch(senha3[i])
     	else
     	{
     		system("cls");
-    		printf("Senha Inv·lida\n");system("color 0c");
+    		printf("Senha Inv√°lida\n");system("color 0c");
         	Beep(1500,500);
         	system("pause");
         	system("cls");
